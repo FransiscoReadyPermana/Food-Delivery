@@ -1,0 +1,1329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_67d6ee969b6ba5d5b92991cbe2e742de {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_67d6ee969b6ba5d5b92991cbe2e742de" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_67d6ee969b6ba5d5b92991cbe2e742de = L.map(
+                "map_67d6ee969b6ba5d5b92991cbe2e742de",
+                {
+                    center: [60.16991980715286, 24.938722552685647],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3abac304843f61da0e4d14fea492788d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+            var marker_ccc4cdc37930faeb3cd415ec344b454a = L.marker(
+                [60.166, 24.928],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_4d5c3cef124582a11bf4879ffe10c2a5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_93ac23f2ca3a73d3ea168d89e4005456 = $(`<div id="html_93ac23f2ca3a73d3ea168d89e4005456" style="width: 100.0%; height: 100.0%;">Customer 684</div>`)[0];
+                popup_4d5c3cef124582a11bf4879ffe10c2a5.setContent(html_93ac23f2ca3a73d3ea168d89e4005456);
+            
+        
+
+        marker_ccc4cdc37930faeb3cd415ec344b454a.bindPopup(popup_4d5c3cef124582a11bf4879ffe10c2a5)
+        ;
+
+        
+    
+    
+            var marker_3ea3832fe5649e113651b27deed4e243 = L.marker(
+                [60.169, 24.929],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_7247129dcef57492d566065b22ad4e6e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_825ba4babe18af51ad8fb0c2b5e73933 = $(`<div id="html_825ba4babe18af51ad8fb0c2b5e73933" style="width: 100.0%; height: 100.0%;">Venue 684</div>`)[0];
+                popup_7247129dcef57492d566065b22ad4e6e.setContent(html_825ba4babe18af51ad8fb0c2b5e73933);
+            
+        
+
+        marker_3ea3832fe5649e113651b27deed4e243.bindPopup(popup_7247129dcef57492d566065b22ad4e6e)
+        ;
+
+        
+    
+    
+            var poly_line_853207ab16a79c8a9fe544c7665838a7 = L.polyline(
+                [[60.166, 24.928], [60.169, 24.929]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_87788a990289d072f5ac09bce004dd05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3cef78324abe5fbe8fee14b985916dc0 = $(`<div id="html_3cef78324abe5fbe8fee14b985916dc0" style="width: 100.0%; height: 100.0%;">Route 684<br>Distance: 0.34 km<br>It takes 19 minutes to delivered</div>`)[0];
+                popup_87788a990289d072f5ac09bce004dd05.setContent(html_3cef78324abe5fbe8fee14b985916dc0);
+            
+        
+
+        poly_line_853207ab16a79c8a9fe544c7665838a7.bindPopup(popup_87788a990289d072f5ac09bce004dd05)
+        ;
+
+        
+    
+    
+            var marker_64ff975ba5128e1141d12e30397a8ff1 = L.marker(
+                [60.169, 24.925],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_4dfb985a390aa9b482e334610769882d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a1846d136e950241be64a05a1d2ad6b = $(`<div id="html_5a1846d136e950241be64a05a1d2ad6b" style="width: 100.0%; height: 100.0%;">Customer 3248</div>`)[0];
+                popup_4dfb985a390aa9b482e334610769882d.setContent(html_5a1846d136e950241be64a05a1d2ad6b);
+            
+        
+
+        marker_64ff975ba5128e1141d12e30397a8ff1.bindPopup(popup_4dfb985a390aa9b482e334610769882d)
+        ;
+
+        
+    
+    
+            var marker_1a9926bac64bd70eba7ea68c9e91969c = L.marker(
+                [60.165, 24.952],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_f992f6d464440a3e21f626494f64f13d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84503052a54b732571e773211d83ca18 = $(`<div id="html_84503052a54b732571e773211d83ca18" style="width: 100.0%; height: 100.0%;">Venue 3248</div>`)[0];
+                popup_f992f6d464440a3e21f626494f64f13d.setContent(html_84503052a54b732571e773211d83ca18);
+            
+        
+
+        marker_1a9926bac64bd70eba7ea68c9e91969c.bindPopup(popup_f992f6d464440a3e21f626494f64f13d)
+        ;
+
+        
+    
+    
+            var poly_line_5e1e22a1b6a7cc9dfa689a9c66b33afa = L.polyline(
+                [[60.169, 24.925], [60.165, 24.952]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_713ea079090233fc2e0f8d2eae8e9833 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_11bf60f9d65c0e3244cbc745e6502fb7 = $(`<div id="html_11bf60f9d65c0e3244cbc745e6502fb7" style="width: 100.0%; height: 100.0%;">Route 3248<br>Distance: 1.56 km<br>It takes 41 minutes to delivered</div>`)[0];
+                popup_713ea079090233fc2e0f8d2eae8e9833.setContent(html_11bf60f9d65c0e3244cbc745e6502fb7);
+            
+        
+
+        poly_line_5e1e22a1b6a7cc9dfa689a9c66b33afa.bindPopup(popup_713ea079090233fc2e0f8d2eae8e9833)
+        ;
+
+        
+    
+    
+            var marker_2b4998ccc7a08665fef3f723c167c541 = L.marker(
+                [60.158, 24.942],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_29d485f12af36a5795573baae703a280 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aa6df7316113a10e43f77eb58824675d = $(`<div id="html_aa6df7316113a10e43f77eb58824675d" style="width: 100.0%; height: 100.0%;">Customer 8343</div>`)[0];
+                popup_29d485f12af36a5795573baae703a280.setContent(html_aa6df7316113a10e43f77eb58824675d);
+            
+        
+
+        marker_2b4998ccc7a08665fef3f723c167c541.bindPopup(popup_29d485f12af36a5795573baae703a280)
+        ;
+
+        
+    
+    
+            var marker_f32861000dd9c5f9a12d6c3370d5387f = L.marker(
+                [60.168, 24.939],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_7652da40e312235643eb4944ce76f75f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_497281e574008bdfc572a1432344351c = $(`<div id="html_497281e574008bdfc572a1432344351c" style="width: 100.0%; height: 100.0%;">Venue 8343</div>`)[0];
+                popup_7652da40e312235643eb4944ce76f75f.setContent(html_497281e574008bdfc572a1432344351c);
+            
+        
+
+        marker_f32861000dd9c5f9a12d6c3370d5387f.bindPopup(popup_7652da40e312235643eb4944ce76f75f)
+        ;
+
+        
+    
+    
+            var poly_line_5be2b2b358471e43dddcd170f1bc16ba = L.polyline(
+                [[60.158, 24.942], [60.168, 24.939]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_e0a0c603fc739fc30d080edd20828c38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2e464cfe53233b14ec91a3d33cec848 = $(`<div id="html_f2e464cfe53233b14ec91a3d33cec848" style="width: 100.0%; height: 100.0%;">Route 8343<br>Distance: 1.12 km<br>It takes 22 minutes to delivered</div>`)[0];
+                popup_e0a0c603fc739fc30d080edd20828c38.setContent(html_f2e464cfe53233b14ec91a3d33cec848);
+            
+        
+
+        poly_line_5be2b2b358471e43dddcd170f1bc16ba.bindPopup(popup_e0a0c603fc739fc30d080edd20828c38)
+        ;
+
+        
+    
+    
+            var marker_77da118c6d612eb17ef9eff8e4c77150 = L.marker(
+                [60.183, 24.92],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_3422225fa759033e8780d61d4e58de3c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee66dc87078c5cdc2e2d8a746bdf3bed = $(`<div id="html_ee66dc87078c5cdc2e2d8a746bdf3bed" style="width: 100.0%; height: 100.0%;">Customer 7488</div>`)[0];
+                popup_3422225fa759033e8780d61d4e58de3c.setContent(html_ee66dc87078c5cdc2e2d8a746bdf3bed);
+            
+        
+
+        marker_77da118c6d612eb17ef9eff8e4c77150.bindPopup(popup_3422225fa759033e8780d61d4e58de3c)
+        ;
+
+        
+    
+    
+            var marker_34faabe699ed48a8d05c1dd2ad283767 = L.marker(
+                [60.18, 24.927],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_5691eb3e5edfc8a984d86a16726f1a2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee149a9abe6fe458682c18775e7982c8 = $(`<div id="html_ee149a9abe6fe458682c18775e7982c8" style="width: 100.0%; height: 100.0%;">Venue 7488</div>`)[0];
+                popup_5691eb3e5edfc8a984d86a16726f1a2f.setContent(html_ee149a9abe6fe458682c18775e7982c8);
+            
+        
+
+        marker_34faabe699ed48a8d05c1dd2ad283767.bindPopup(popup_5691eb3e5edfc8a984d86a16726f1a2f)
+        ;
+
+        
+    
+    
+            var poly_line_00e1c82b4af048fa8f54875f139a4e68 = L.polyline(
+                [[60.183, 24.92], [60.18, 24.927]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_c172f8f55b1b5cf32b590c2ef8ce48d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fb6489c366356a790b5d0a337484af8 = $(`<div id="html_9fb6489c366356a790b5d0a337484af8" style="width: 100.0%; height: 100.0%;">Route 7488<br>Distance: 0.51 km<br>It takes 25 minutes to delivered</div>`)[0];
+                popup_c172f8f55b1b5cf32b590c2ef8ce48d8.setContent(html_9fb6489c366356a790b5d0a337484af8);
+            
+        
+
+        poly_line_00e1c82b4af048fa8f54875f139a4e68.bindPopup(popup_c172f8f55b1b5cf32b590c2ef8ce48d8)
+        ;
+
+        
+    
+    
+            var marker_8d9542246fc020086be70cdc07ce172b = L.marker(
+                [60.161, 24.924],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_d22968945222c16744dd4b3c288f740a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_86a7237bc324c686dd48e810848634bc = $(`<div id="html_86a7237bc324c686dd48e810848634bc" style="width: 100.0%; height: 100.0%;">Customer 4493</div>`)[0];
+                popup_d22968945222c16744dd4b3c288f740a.setContent(html_86a7237bc324c686dd48e810848634bc);
+            
+        
+
+        marker_8d9542246fc020086be70cdc07ce172b.bindPopup(popup_d22968945222c16744dd4b3c288f740a)
+        ;
+
+        
+    
+    
+            var marker_b5a75816a6a8f4c4ab2bef3c5482b044 = L.marker(
+                [60.168, 24.93],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_28c4e1e25971f8519c08f14513f0108e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09dc7c149de929e613abef586ef7e6a7 = $(`<div id="html_09dc7c149de929e613abef586ef7e6a7" style="width: 100.0%; height: 100.0%;">Venue 4493</div>`)[0];
+                popup_28c4e1e25971f8519c08f14513f0108e.setContent(html_09dc7c149de929e613abef586ef7e6a7);
+            
+        
+
+        marker_b5a75816a6a8f4c4ab2bef3c5482b044.bindPopup(popup_28c4e1e25971f8519c08f14513f0108e)
+        ;
+
+        
+    
+    
+            var poly_line_24276b7b69fb828cd1a13b7a6df7111c = L.polyline(
+                [[60.161, 24.924], [60.168, 24.93]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_11b5244da82188ba832246821e418463 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0387c62281c78b70a5d5b04aec47729f = $(`<div id="html_0387c62281c78b70a5d5b04aec47729f" style="width: 100.0%; height: 100.0%;">Route 4493<br>Distance: 0.85 km<br>It takes 35 minutes to delivered</div>`)[0];
+                popup_11b5244da82188ba832246821e418463.setContent(html_0387c62281c78b70a5d5b04aec47729f);
+            
+        
+
+        poly_line_24276b7b69fb828cd1a13b7a6df7111c.bindPopup(popup_11b5244da82188ba832246821e418463)
+        ;
+
+        
+    
+    
+            var marker_dfc32e6fffb27c55939648ac4d82e05d = L.marker(
+                [60.189, 24.947],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_22f9e48b93f81d8a03344d65f7c68632 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7205afe65befb8d58a755fe888769f84 = $(`<div id="html_7205afe65befb8d58a755fe888769f84" style="width: 100.0%; height: 100.0%;">Customer 2869</div>`)[0];
+                popup_22f9e48b93f81d8a03344d65f7c68632.setContent(html_7205afe65befb8d58a755fe888769f84);
+            
+        
+
+        marker_dfc32e6fffb27c55939648ac4d82e05d.bindPopup(popup_22f9e48b93f81d8a03344d65f7c68632)
+        ;
+
+        
+    
+    
+            var marker_9310a55b7a34da93e86548095ee19cfe = L.marker(
+                [60.173, 24.923],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_19c9c40bd372e4792c7a225c601e71df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cb8203912ac2f45747d39a81e43bfe32 = $(`<div id="html_cb8203912ac2f45747d39a81e43bfe32" style="width: 100.0%; height: 100.0%;">Venue 2869</div>`)[0];
+                popup_19c9c40bd372e4792c7a225c601e71df.setContent(html_cb8203912ac2f45747d39a81e43bfe32);
+            
+        
+
+        marker_9310a55b7a34da93e86548095ee19cfe.bindPopup(popup_19c9c40bd372e4792c7a225c601e71df)
+        ;
+
+        
+    
+    
+            var poly_line_a701129dd57d43437a17c476128929cb = L.polyline(
+                [[60.189, 24.947], [60.173, 24.923]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_c2ea782f6d320abfd10881f94066a19e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8e7fb6fdaaa808b9da1974d28421f5d8 = $(`<div id="html_8e7fb6fdaaa808b9da1974d28421f5d8" style="width: 100.0%; height: 100.0%;">Route 2869<br>Distance: 2.22 km<br>It takes 36 minutes to delivered</div>`)[0];
+                popup_c2ea782f6d320abfd10881f94066a19e.setContent(html_8e7fb6fdaaa808b9da1974d28421f5d8);
+            
+        
+
+        poly_line_a701129dd57d43437a17c476128929cb.bindPopup(popup_c2ea782f6d320abfd10881f94066a19e)
+        ;
+
+        
+    
+    
+            var marker_35794c9e3408090cd045a9c6e72796ab = L.marker(
+                [60.188, 24.918],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_f2c27afbbaf0d4d8c5fdd90a308e8d94 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_62aea567fd7dc50f189a83f5d9b3852f = $(`<div id="html_62aea567fd7dc50f189a83f5d9b3852f" style="width: 100.0%; height: 100.0%;">Customer 13244</div>`)[0];
+                popup_f2c27afbbaf0d4d8c5fdd90a308e8d94.setContent(html_62aea567fd7dc50f189a83f5d9b3852f);
+            
+        
+
+        marker_35794c9e3408090cd045a9c6e72796ab.bindPopup(popup_f2c27afbbaf0d4d8c5fdd90a308e8d94)
+        ;
+
+        
+    
+    
+            var marker_2f3afd4154fcb62a5fc8991f2ec534bc = L.marker(
+                [60.198, 24.931],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_8ec2f382a5002261eb376b2d9df6c1d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43f863860488b3cd8886dc2dabf8a543 = $(`<div id="html_43f863860488b3cd8886dc2dabf8a543" style="width: 100.0%; height: 100.0%;">Venue 13244</div>`)[0];
+                popup_8ec2f382a5002261eb376b2d9df6c1d9.setContent(html_43f863860488b3cd8886dc2dabf8a543);
+            
+        
+
+        marker_2f3afd4154fcb62a5fc8991f2ec534bc.bindPopup(popup_8ec2f382a5002261eb376b2d9df6c1d9)
+        ;
+
+        
+    
+    
+            var poly_line_2b9ef815f34475c70ca627e5c53fb4ea = L.polyline(
+                [[60.188, 24.918], [60.198, 24.931]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_288543e93569d00f874ee1016c86a81b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0cfa39eec0c022d66dd9df1eb9c28a7 = $(`<div id="html_b0cfa39eec0c022d66dd9df1eb9c28a7" style="width: 100.0%; height: 100.0%;">Route 13244<br>Distance: 1.32 km<br>It takes 29 minutes to delivered</div>`)[0];
+                popup_288543e93569d00f874ee1016c86a81b.setContent(html_b0cfa39eec0c022d66dd9df1eb9c28a7);
+            
+        
+
+        poly_line_2b9ef815f34475c70ca627e5c53fb4ea.bindPopup(popup_288543e93569d00f874ee1016c86a81b)
+        ;
+
+        
+    
+    
+            var marker_74e171e0ba49d09c4c84271c0485be02 = L.marker(
+                [60.187, 24.965],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_e3e483aa7285912c28159a08daca1366 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_387c05f6418b0a56ba960e49e102afd8 = $(`<div id="html_387c05f6418b0a56ba960e49e102afd8" style="width: 100.0%; height: 100.0%;">Customer 14393</div>`)[0];
+                popup_e3e483aa7285912c28159a08daca1366.setContent(html_387c05f6418b0a56ba960e49e102afd8);
+            
+        
+
+        marker_74e171e0ba49d09c4c84271c0485be02.bindPopup(popup_e3e483aa7285912c28159a08daca1366)
+        ;
+
+        
+    
+    
+            var marker_69981bfe4ef8aadf03a3f9c39fd23b23 = L.marker(
+                [60.198, 24.934],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_1c770c48a561d06d700d4596dc48693f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c0e4209dec2a5cb1db83766f13040f7 = $(`<div id="html_7c0e4209dec2a5cb1db83766f13040f7" style="width: 100.0%; height: 100.0%;">Venue 14393</div>`)[0];
+                popup_1c770c48a561d06d700d4596dc48693f.setContent(html_7c0e4209dec2a5cb1db83766f13040f7);
+            
+        
+
+        marker_69981bfe4ef8aadf03a3f9c39fd23b23.bindPopup(popup_1c770c48a561d06d700d4596dc48693f)
+        ;
+
+        
+    
+    
+            var poly_line_5b996855a45bff4bb48756b9d137bb86 = L.polyline(
+                [[60.187, 24.965], [60.198, 24.934]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_4ea6b000c939f477bb7574c8a3dd2726 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43bfed88f65e8282769af512f0d901bd = $(`<div id="html_43bfed88f65e8282769af512f0d901bd" style="width: 100.0%; height: 100.0%;">Route 14393<br>Distance: 2.11 km<br>It takes 34 minutes to delivered</div>`)[0];
+                popup_4ea6b000c939f477bb7574c8a3dd2726.setContent(html_43bfed88f65e8282769af512f0d901bd);
+            
+        
+
+        poly_line_5b996855a45bff4bb48756b9d137bb86.bindPopup(popup_4ea6b000c939f477bb7574c8a3dd2726)
+        ;
+
+        
+    
+    
+            var marker_35f619d7630ca6539cc463981cba1a78 = L.marker(
+                [60.157, 24.943],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_38a676c4b39291ddf11a974a59b2a434 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c411146f6c8f619bfd029fd06ce7a698 = $(`<div id="html_c411146f6c8f619bfd029fd06ce7a698" style="width: 100.0%; height: 100.0%;">Customer 15490</div>`)[0];
+                popup_38a676c4b39291ddf11a974a59b2a434.setContent(html_c411146f6c8f619bfd029fd06ce7a698);
+            
+        
+
+        marker_35f619d7630ca6539cc463981cba1a78.bindPopup(popup_38a676c4b39291ddf11a974a59b2a434)
+        ;
+
+        
+    
+    
+            var marker_60cd7f11e99fca7bfc60ac4428b1d537 = L.marker(
+                [60.166, 24.937],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_9df4e34e8cc5f51c65f19304e101908a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_529179e9061e67b6edc8aa2d4cd6a315 = $(`<div id="html_529179e9061e67b6edc8aa2d4cd6a315" style="width: 100.0%; height: 100.0%;">Venue 15490</div>`)[0];
+                popup_9df4e34e8cc5f51c65f19304e101908a.setContent(html_529179e9061e67b6edc8aa2d4cd6a315);
+            
+        
+
+        marker_60cd7f11e99fca7bfc60ac4428b1d537.bindPopup(popup_9df4e34e8cc5f51c65f19304e101908a)
+        ;
+
+        
+    
+    
+            var poly_line_b419753b18aaa351426e5a9a3ac1712e = L.polyline(
+                [[60.157, 24.943], [60.166, 24.937]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_79259aca3d7a195c7a2fb282f4f77106 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c20e449a323d5af6472f13a43817ce4 = $(`<div id="html_7c20e449a323d5af6472f13a43817ce4" style="width: 100.0%; height: 100.0%;">Route 15490<br>Distance: 1.05 km<br>It takes 27 minutes to delivered</div>`)[0];
+                popup_79259aca3d7a195c7a2fb282f4f77106.setContent(html_7c20e449a323d5af6472f13a43817ce4);
+            
+        
+
+        poly_line_b419753b18aaa351426e5a9a3ac1712e.bindPopup(popup_79259aca3d7a195c7a2fb282f4f77106)
+        ;
+
+        
+    
+    
+            var marker_c8a43037d105822ae3fd884564d64f25 = L.marker(
+                [60.186, 24.946],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_a47c74c80b10b3fe8667d1c006a26558 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b52224c738ca5e9092f047ad85b8140 = $(`<div id="html_2b52224c738ca5e9092f047ad85b8140" style="width: 100.0%; height: 100.0%;">Customer 117</div>`)[0];
+                popup_a47c74c80b10b3fe8667d1c006a26558.setContent(html_2b52224c738ca5e9092f047ad85b8140);
+            
+        
+
+        marker_c8a43037d105822ae3fd884564d64f25.bindPopup(popup_a47c74c80b10b3fe8667d1c006a26558)
+        ;
+
+        
+    
+    
+            var marker_0ac24b03fed7a9ae7daca8476da9a131 = L.marker(
+                [60.188, 24.956],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_35803c500e52dbba789caafe0a8e6e5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_843b72d16c1cc760619c8c515ef2e464 = $(`<div id="html_843b72d16c1cc760619c8c515ef2e464" style="width: 100.0%; height: 100.0%;">Venue 117</div>`)[0];
+                popup_35803c500e52dbba789caafe0a8e6e5b.setContent(html_843b72d16c1cc760619c8c515ef2e464);
+            
+        
+
+        marker_0ac24b03fed7a9ae7daca8476da9a131.bindPopup(popup_35803c500e52dbba789caafe0a8e6e5b)
+        ;
+
+        
+    
+    
+            var poly_line_62c0b87ff5d72e8ead8f7b6b6b5470c8 = L.polyline(
+                [[60.186, 24.946], [60.188, 24.956]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_e1e6a243c0802f7a920476015ac65aa3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb0299ecdc46459efaf3244c64c6a6c4 = $(`<div id="html_fb0299ecdc46459efaf3244c64c6a6c4" style="width: 100.0%; height: 100.0%;">Route 117<br>Distance: 0.60 km<br>It takes 21 minutes to delivered</div>`)[0];
+                popup_e1e6a243c0802f7a920476015ac65aa3.setContent(html_fb0299ecdc46459efaf3244c64c6a6c4);
+            
+        
+
+        poly_line_62c0b87ff5d72e8ead8f7b6b6b5470c8.bindPopup(popup_e1e6a243c0802f7a920476015ac65aa3)
+        ;
+
+        
+    
+    
+            var marker_2273e4dc0381623cac0b08aa422d5d57 = L.marker(
+                [60.193, 24.943],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_84662d60d3f770005cdd00d10f81b344 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7203ef5a343fb34352194f5b163cfc56 = $(`<div id="html_7203ef5a343fb34352194f5b163cfc56" style="width: 100.0%; height: 100.0%;">Customer 16993</div>`)[0];
+                popup_84662d60d3f770005cdd00d10f81b344.setContent(html_7203ef5a343fb34352194f5b163cfc56);
+            
+        
+
+        marker_2273e4dc0381623cac0b08aa422d5d57.bindPopup(popup_84662d60d3f770005cdd00d10f81b344)
+        ;
+
+        
+    
+    
+            var marker_64485c5b65c6d83854332287d3ec346d = L.marker(
+                [60.185, 24.953],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_c8e2531e9378777d7d0448015ee67223 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44f93fa48df22d45d7b6b60a6e41579f = $(`<div id="html_44f93fa48df22d45d7b6b60a6e41579f" style="width: 100.0%; height: 100.0%;">Venue 16993</div>`)[0];
+                popup_c8e2531e9378777d7d0448015ee67223.setContent(html_44f93fa48df22d45d7b6b60a6e41579f);
+            
+        
+
+        marker_64485c5b65c6d83854332287d3ec346d.bindPopup(popup_c8e2531e9378777d7d0448015ee67223)
+        ;
+
+        
+    
+    
+            var poly_line_53fca0c351ef7c1338b6a1f23c982064 = L.polyline(
+                [[60.193, 24.943], [60.185, 24.953]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_29f2ea3590e24ba40b82403cc3d0b706 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c44b6b1c9af3c581f8fba943ff3f45a3 = $(`<div id="html_c44b6b1c9af3c581f8fba943ff3f45a3" style="width: 100.0%; height: 100.0%;">Route 16993<br>Distance: 1.05 km<br>It takes 26 minutes to delivered</div>`)[0];
+                popup_29f2ea3590e24ba40b82403cc3d0b706.setContent(html_c44b6b1c9af3c581f8fba943ff3f45a3);
+            
+        
+
+        poly_line_53fca0c351ef7c1338b6a1f23c982064.bindPopup(popup_29f2ea3590e24ba40b82403cc3d0b706)
+        ;
+
+        
+    
+    
+            var marker_91a65e51f33dbf37d6c2765a92646a55 = L.marker(
+                [60.182, 24.951],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_9f6d5b04ce621b2a4a2880d24d01a518 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf53d5504fe7206b3731f37ea1f9e1ad = $(`<div id="html_cf53d5504fe7206b3731f37ea1f9e1ad" style="width: 100.0%; height: 100.0%;">Customer 14675</div>`)[0];
+                popup_9f6d5b04ce621b2a4a2880d24d01a518.setContent(html_cf53d5504fe7206b3731f37ea1f9e1ad);
+            
+        
+
+        marker_91a65e51f33dbf37d6c2765a92646a55.bindPopup(popup_9f6d5b04ce621b2a4a2880d24d01a518)
+        ;
+
+        
+    
+    
+            var marker_da1901d9edc2c319575e6bf7ad6e90ec = L.marker(
+                [60.17, 24.945],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_d6cfe2d0e8eb3633538be031fe504fd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79319698d2a1b36d946c759e45409198 = $(`<div id="html_79319698d2a1b36d946c759e45409198" style="width: 100.0%; height: 100.0%;">Venue 14675</div>`)[0];
+                popup_d6cfe2d0e8eb3633538be031fe504fd5.setContent(html_79319698d2a1b36d946c759e45409198);
+            
+        
+
+        marker_da1901d9edc2c319575e6bf7ad6e90ec.bindPopup(popup_d6cfe2d0e8eb3633538be031fe504fd5)
+        ;
+
+        
+    
+    
+            var poly_line_35da6d778aa48f3bbe6146b1b813da07 = L.polyline(
+                [[60.182, 24.951], [60.17, 24.945]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_60044cd5e2a3b71d8475e993ad8a3a3a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_126abc1808d2d17d1972e2dfacdd3000 = $(`<div id="html_126abc1808d2d17d1972e2dfacdd3000" style="width: 100.0%; height: 100.0%;">Route 14675<br>Distance: 1.37 km<br>It takes 18 minutes to delivered</div>`)[0];
+                popup_60044cd5e2a3b71d8475e993ad8a3a3a.setContent(html_126abc1808d2d17d1972e2dfacdd3000);
+            
+        
+
+        poly_line_35da6d778aa48f3bbe6146b1b813da07.bindPopup(popup_60044cd5e2a3b71d8475e993ad8a3a3a)
+        ;
+
+        
+    
+    
+            var marker_e711fd011eba08f912175e5452eca199 = L.marker(
+                [60.192, 24.939],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_f1a3cb41887c99a126fe0a94bf303b04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c008eda67473833ede55c68893a3db8c = $(`<div id="html_c008eda67473833ede55c68893a3db8c" style="width: 100.0%; height: 100.0%;">Customer 17860</div>`)[0];
+                popup_f1a3cb41887c99a126fe0a94bf303b04.setContent(html_c008eda67473833ede55c68893a3db8c);
+            
+        
+
+        marker_e711fd011eba08f912175e5452eca199.bindPopup(popup_f1a3cb41887c99a126fe0a94bf303b04)
+        ;
+
+        
+    
+    
+            var marker_57a5368f36eec5983ac0fb1bd5ae5b85 = L.marker(
+                [60.192, 24.952],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_49c45da8f6e9882dece361b24e69066e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38b69c88c62a20352d00bc347cfeb5cb = $(`<div id="html_38b69c88c62a20352d00bc347cfeb5cb" style="width: 100.0%; height: 100.0%;">Venue 17860</div>`)[0];
+                popup_49c45da8f6e9882dece361b24e69066e.setContent(html_38b69c88c62a20352d00bc347cfeb5cb);
+            
+        
+
+        marker_57a5368f36eec5983ac0fb1bd5ae5b85.bindPopup(popup_49c45da8f6e9882dece361b24e69066e)
+        ;
+
+        
+    
+    
+            var poly_line_64e12b83bb1669f8b75f78329783f679 = L.polyline(
+                [[60.192, 24.939], [60.192, 24.952]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_045ffb80ec56817364659f43d17de601 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d3711a8082a96fd289bde945762917e = $(`<div id="html_9d3711a8082a96fd289bde945762917e" style="width: 100.0%; height: 100.0%;">Route 17860<br>Distance: 0.72 km<br>It takes 25 minutes to delivered</div>`)[0];
+                popup_045ffb80ec56817364659f43d17de601.setContent(html_9d3711a8082a96fd289bde945762917e);
+            
+        
+
+        poly_line_64e12b83bb1669f8b75f78329783f679.bindPopup(popup_045ffb80ec56817364659f43d17de601)
+        ;
+
+        
+    
+    
+            var marker_08654aa0ecb115642c1fe921b1c65f60 = L.marker(
+                [60.188, 24.966],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_bbb1e3cabd01b9cb5b98f304b822d412 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bbef6a8450ed12f65ba6c6fa5d911bec = $(`<div id="html_bbef6a8450ed12f65ba6c6fa5d911bec" style="width: 100.0%; height: 100.0%;">Customer 16532</div>`)[0];
+                popup_bbb1e3cabd01b9cb5b98f304b822d412.setContent(html_bbef6a8450ed12f65ba6c6fa5d911bec);
+            
+        
+
+        marker_08654aa0ecb115642c1fe921b1c65f60.bindPopup(popup_bbb1e3cabd01b9cb5b98f304b822d412)
+        ;
+
+        
+    
+    
+            var marker_6a85be4fa2c9e42e429c0aaed0728b3a = L.marker(
+                [60.171, 24.947],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_f167e3c6e4607390db71074fd853f9da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1dbad91e4796b2c50dcb668c11a9bf8 = $(`<div id="html_e1dbad91e4796b2c50dcb668c11a9bf8" style="width: 100.0%; height: 100.0%;">Venue 16532</div>`)[0];
+                popup_f167e3c6e4607390db71074fd853f9da.setContent(html_e1dbad91e4796b2c50dcb668c11a9bf8);
+            
+        
+
+        marker_6a85be4fa2c9e42e429c0aaed0728b3a.bindPopup(popup_f167e3c6e4607390db71074fd853f9da)
+        ;
+
+        
+    
+    
+            var poly_line_8d68524ff6f1f06abbc585613fa231be = L.polyline(
+                [[60.188, 24.966], [60.171, 24.947]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_b33933d7434d1f4bf5f456e13481d0ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bf4ffb7c717c2718c0f76b8dddb34d2 = $(`<div id="html_2bf4ffb7c717c2718c0f76b8dddb34d2" style="width: 100.0%; height: 100.0%;">Route 16532<br>Distance: 2.16 km<br>It takes 40 minutes to delivered</div>`)[0];
+                popup_b33933d7434d1f4bf5f456e13481d0ee.setContent(html_2bf4ffb7c717c2718c0f76b8dddb34d2);
+            
+        
+
+        poly_line_8d68524ff6f1f06abbc585613fa231be.bindPopup(popup_b33933d7434d1f4bf5f456e13481d0ee)
+        ;
+
+        
+    
+    
+            var marker_bb1e5c5cf022cf3a84acd295e0591c1b = L.marker(
+                [60.162, 24.947],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_4ce859f75efdb49eafdcd9786dc144dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d8c67ed01a79f55580f6ea7362abd276 = $(`<div id="html_d8c67ed01a79f55580f6ea7362abd276" style="width: 100.0%; height: 100.0%;">Customer 8377</div>`)[0];
+                popup_4ce859f75efdb49eafdcd9786dc144dc.setContent(html_d8c67ed01a79f55580f6ea7362abd276);
+            
+        
+
+        marker_bb1e5c5cf022cf3a84acd295e0591c1b.bindPopup(popup_4ce859f75efdb49eafdcd9786dc144dc)
+        ;
+
+        
+    
+    
+            var marker_9bb49196730c0677794dc3018f85e3aa = L.marker(
+                [60.162, 24.94],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_148a9a0b26844b14e30ac817a4ce32e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_232d9faafa094a5ce7302151fae66cc6 = $(`<div id="html_232d9faafa094a5ce7302151fae66cc6" style="width: 100.0%; height: 100.0%;">Venue 8377</div>`)[0];
+                popup_148a9a0b26844b14e30ac817a4ce32e3.setContent(html_232d9faafa094a5ce7302151fae66cc6);
+            
+        
+
+        marker_9bb49196730c0677794dc3018f85e3aa.bindPopup(popup_148a9a0b26844b14e30ac817a4ce32e3)
+        ;
+
+        
+    
+    
+            var poly_line_4e5cbc1735029d65bed614d37980d74b = L.polyline(
+                [[60.162, 24.947], [60.162, 24.94]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_57d5bf8bc365227c57c0f4988da93ba5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_15ce74950d8b95a03dd1a94b87b84042 = $(`<div id="html_15ce74950d8b95a03dd1a94b87b84042" style="width: 100.0%; height: 100.0%;">Route 8377<br>Distance: 0.39 km<br>It takes 25 minutes to delivered</div>`)[0];
+                popup_57d5bf8bc365227c57c0f4988da93ba5.setContent(html_15ce74950d8b95a03dd1a94b87b84042);
+            
+        
+
+        poly_line_4e5cbc1735029d65bed614d37980d74b.bindPopup(popup_57d5bf8bc365227c57c0f4988da93ba5)
+        ;
+
+        
+    
+    
+            var marker_ccc3b73958d9e83407525045bb735f92 = L.marker(
+                [60.197, 24.94],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_1f483ac34a32d60a742c02857966a4a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_88428f28e20c4116ef783b230edba892 = $(`<div id="html_88428f28e20c4116ef783b230edba892" style="width: 100.0%; height: 100.0%;">Customer 4767</div>`)[0];
+                popup_1f483ac34a32d60a742c02857966a4a0.setContent(html_88428f28e20c4116ef783b230edba892);
+            
+        
+
+        marker_ccc3b73958d9e83407525045bb735f92.bindPopup(popup_1f483ac34a32d60a742c02857966a4a0)
+        ;
+
+        
+    
+    
+            var marker_99121248c104b73eaee577adee08f679 = L.marker(
+                [60.191, 24.945],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_de76f8e6ca16afce4ca72af8a7c60a4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_906fc85463051faa46e2b411b613e518 = $(`<div id="html_906fc85463051faa46e2b411b613e518" style="width: 100.0%; height: 100.0%;">Venue 4767</div>`)[0];
+                popup_de76f8e6ca16afce4ca72af8a7c60a4b.setContent(html_906fc85463051faa46e2b411b613e518);
+            
+        
+
+        marker_99121248c104b73eaee577adee08f679.bindPopup(popup_de76f8e6ca16afce4ca72af8a7c60a4b)
+        ;
+
+        
+    
+    
+            var poly_line_f7d2469457109a618dc217c0f08232b5 = L.polyline(
+                [[60.197, 24.94], [60.191, 24.945]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_8fb5ecea774ec7ac6b1075023ac4621f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef20f3222fedac7d976269bd9b926755 = $(`<div id="html_ef20f3222fedac7d976269bd9b926755" style="width: 100.0%; height: 100.0%;">Route 4767<br>Distance: 0.72 km<br>It takes 24 minutes to delivered</div>`)[0];
+                popup_8fb5ecea774ec7ac6b1075023ac4621f.setContent(html_ef20f3222fedac7d976269bd9b926755);
+            
+        
+
+        poly_line_f7d2469457109a618dc217c0f08232b5.bindPopup(popup_8fb5ecea774ec7ac6b1075023ac4621f)
+        ;
+
+        
+    
+    
+            var marker_a1ee5b8bda1a1d183b4401bcc6571c88 = L.marker(
+                [60.157, 24.951],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_898451dbd3f5a2a119fc082cb2723d74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_168fb38584418f5beefd3edc6ac9a36b = $(`<div id="html_168fb38584418f5beefd3edc6ac9a36b" style="width: 100.0%; height: 100.0%;">Customer 3211</div>`)[0];
+                popup_898451dbd3f5a2a119fc082cb2723d74.setContent(html_168fb38584418f5beefd3edc6ac9a36b);
+            
+        
+
+        marker_a1ee5b8bda1a1d183b4401bcc6571c88.bindPopup(popup_898451dbd3f5a2a119fc082cb2723d74)
+        ;
+
+        
+    
+    
+            var marker_75171ae8119ab1a4de2130ff7eb8d768 = L.marker(
+                [60.168, 24.939],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_4eab5ac22fd98518efe8ae25e84da88a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73e1954c46f83e175426a27c532f728d = $(`<div id="html_73e1954c46f83e175426a27c532f728d" style="width: 100.0%; height: 100.0%;">Venue 3211</div>`)[0];
+                popup_4eab5ac22fd98518efe8ae25e84da88a.setContent(html_73e1954c46f83e175426a27c532f728d);
+            
+        
+
+        marker_75171ae8119ab1a4de2130ff7eb8d768.bindPopup(popup_4eab5ac22fd98518efe8ae25e84da88a)
+        ;
+
+        
+    
+    
+            var poly_line_6c5e6579c34f27de19565d0ea223e6fa = L.polyline(
+                [[60.157, 24.951], [60.168, 24.939]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_b7486e03aff3c2c10745d57e327087ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4740dbef1c83c4949a98148ab4d6f236 = $(`<div id="html_4740dbef1c83c4949a98148ab4d6f236" style="width: 100.0%; height: 100.0%;">Route 3211<br>Distance: 1.39 km<br>It takes 31 minutes to delivered</div>`)[0];
+                popup_b7486e03aff3c2c10745d57e327087ba.setContent(html_4740dbef1c83c4949a98148ab4d6f236);
+            
+        
+
+        poly_line_6c5e6579c34f27de19565d0ea223e6fa.bindPopup(popup_b7486e03aff3c2c10745d57e327087ba)
+        ;
+
+        
+    
+    
+            var marker_19ae624ec053402d2023718a22e92b52 = L.marker(
+                [60.184, 24.941],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_08d7b8e723db71c5601c640b32c94d2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9a9ea5ff87e8108e410d380dc1f2c1e = $(`<div id="html_a9a9ea5ff87e8108e410d380dc1f2c1e" style="width: 100.0%; height: 100.0%;">Customer 9872</div>`)[0];
+                popup_08d7b8e723db71c5601c640b32c94d2d.setContent(html_a9a9ea5ff87e8108e410d380dc1f2c1e);
+            
+        
+
+        marker_19ae624ec053402d2023718a22e92b52.bindPopup(popup_08d7b8e723db71c5601c640b32c94d2d)
+        ;
+
+        
+    
+    
+            var marker_69626d1be9a78b73c35bcd4ddbbee982 = L.marker(
+                [60.185, 24.961],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_6514d9023dc25d89127977af0559fadc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_314a67effdb6d902c038132dac56430f = $(`<div id="html_314a67effdb6d902c038132dac56430f" style="width: 100.0%; height: 100.0%;">Venue 9872</div>`)[0];
+                popup_6514d9023dc25d89127977af0559fadc.setContent(html_314a67effdb6d902c038132dac56430f);
+            
+        
+
+        marker_69626d1be9a78b73c35bcd4ddbbee982.bindPopup(popup_6514d9023dc25d89127977af0559fadc)
+        ;
+
+        
+    
+    
+            var poly_line_64174803e294a68b74688900907b10df = L.polyline(
+                [[60.184, 24.941], [60.185, 24.961]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_459b56433e43fd6624f14e1e7ea6fd9d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de1b37be4b309157d8b50eae9335daa9 = $(`<div id="html_de1b37be4b309157d8b50eae9335daa9" style="width: 100.0%; height: 100.0%;">Route 9872<br>Distance: 1.11 km<br>It takes 34 minutes to delivered</div>`)[0];
+                popup_459b56433e43fd6624f14e1e7ea6fd9d.setContent(html_de1b37be4b309157d8b50eae9335daa9);
+            
+        
+
+        poly_line_64174803e294a68b74688900907b10df.bindPopup(popup_459b56433e43fd6624f14e1e7ea6fd9d)
+        ;
+
+        
+    
+    
+            var marker_462aca905a6d9bf03c6744f1437f7428 = L.marker(
+                [60.186, 24.911],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_ed48844eb313b196cd3640239165caf8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe93b13010913cb2c4762d8f9002c447 = $(`<div id="html_fe93b13010913cb2c4762d8f9002c447" style="width: 100.0%; height: 100.0%;">Customer 13475</div>`)[0];
+                popup_ed48844eb313b196cd3640239165caf8.setContent(html_fe93b13010913cb2c4762d8f9002c447);
+            
+        
+
+        marker_462aca905a6d9bf03c6744f1437f7428.bindPopup(popup_ed48844eb313b196cd3640239165caf8)
+        ;
+
+        
+    
+    
+            var marker_8fecb4933948e8a54a98cc4cb2eaefdf = L.marker(
+                [60.183, 24.919],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_fedb0fc4f42b240bafdde26d9528ac5f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6ae15d92af39c20f0f99c2888d37303 = $(`<div id="html_b6ae15d92af39c20f0f99c2888d37303" style="width: 100.0%; height: 100.0%;">Venue 13475</div>`)[0];
+                popup_fedb0fc4f42b240bafdde26d9528ac5f.setContent(html_b6ae15d92af39c20f0f99c2888d37303);
+            
+        
+
+        marker_8fecb4933948e8a54a98cc4cb2eaefdf.bindPopup(popup_fedb0fc4f42b240bafdde26d9528ac5f)
+        ;
+
+        
+    
+    
+            var poly_line_24ad6fd3ef03d71eaff65e4afa50d29b = L.polyline(
+                [[60.186, 24.911], [60.183, 24.919]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_31fe17c2b8a1cdc463626bcd4f6e9aef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99c9b9b1eec2f440e9238ccdc7b1db97 = $(`<div id="html_99c9b9b1eec2f440e9238ccdc7b1db97" style="width: 100.0%; height: 100.0%;">Route 13475<br>Distance: 0.55 km<br>It takes 18 minutes to delivered</div>`)[0];
+                popup_31fe17c2b8a1cdc463626bcd4f6e9aef.setContent(html_99c9b9b1eec2f440e9238ccdc7b1db97);
+            
+        
+
+        poly_line_24ad6fd3ef03d71eaff65e4afa50d29b.bindPopup(popup_31fe17c2b8a1cdc463626bcd4f6e9aef)
+        ;
+
+        
+    
+    
+            var marker_5a03010baf7d779eeb7d4b4ad0a1348c = L.marker(
+                [60.173, 24.959],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_edbbb1d03b168dada5ff15268a53cead = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_461957c187aa70203d0d57793e7f271c = $(`<div id="html_461957c187aa70203d0d57793e7f271c" style="width: 100.0%; height: 100.0%;">Customer 16757</div>`)[0];
+                popup_edbbb1d03b168dada5ff15268a53cead.setContent(html_461957c187aa70203d0d57793e7f271c);
+            
+        
+
+        marker_5a03010baf7d779eeb7d4b4ad0a1348c.bindPopup(popup_edbbb1d03b168dada5ff15268a53cead)
+        ;
+
+        
+    
+    
+            var marker_30f38c07110f96134b1bfdafcdfd2462 = L.marker(
+                [60.167, 24.966],
+                {}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_c8edaaf0d4198a065ac6cb512daf8839 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2233c30315da3d12f3eb22fa811d0fdb = $(`<div id="html_2233c30315da3d12f3eb22fa811d0fdb" style="width: 100.0%; height: 100.0%;">Venue 16757</div>`)[0];
+                popup_c8edaaf0d4198a065ac6cb512daf8839.setContent(html_2233c30315da3d12f3eb22fa811d0fdb);
+            
+        
+
+        marker_30f38c07110f96134b1bfdafcdfd2462.bindPopup(popup_c8edaaf0d4198a065ac6cb512daf8839)
+        ;
+
+        
+    
+    
+            var poly_line_6dc0cfa41b245fe4a46104819c7a2d62 = L.polyline(
+                [[60.173, 24.959], [60.167, 24.966]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_67d6ee969b6ba5d5b92991cbe2e742de);
+        
+    
+        var popup_762da3d5fc1dcbffae3b1c34ab0f7d51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58a58af303de15805557795174c5ece7 = $(`<div id="html_58a58af303de15805557795174c5ece7" style="width: 100.0%; height: 100.0%;">Route 16757<br>Distance: 0.77 km<br>It takes 25 minutes to delivered</div>`)[0];
+                popup_762da3d5fc1dcbffae3b1c34ab0f7d51.setContent(html_58a58af303de15805557795174c5ece7);
+            
+        
+
+        poly_line_6dc0cfa41b245fe4a46104819c7a2d62.bindPopup(popup_762da3d5fc1dcbffae3b1c34ab0f7d51)
+        ;
+
+        
+    
+</script>
+</html>
